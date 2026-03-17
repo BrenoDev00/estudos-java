@@ -1,0 +1,11 @@
+o Java é uma liguagem híbrida, ou seja, possui características de liguagem interpretada e também de liguagem compilada.
+
+Como o Java funciona então?
+    1 - você escreve código Java que será compilado para Bytecode;
+    2 - o código Bytecode gerado é interpretado e executado pela máquina virtual, 
+        no caso do Java a JVM (Java Virtual Machine).
+
+JVM - A máquina virtual do Java é necessária para executar e desenvolver sistemas Java.
+
+O Java usa o paradigma orientado a objetos - toda aplicação Java é feita com classes.
+Package - é um agrupamento lógico de classes relacionadas.

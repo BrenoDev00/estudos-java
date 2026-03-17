@@ -1,0 +1,3 @@
+- ctrl + shift + a: pesquisa geral da ide;
+- crtl + espaço: sugestões de auto completar;
+- ctrl + alt + l: auto indentação;
