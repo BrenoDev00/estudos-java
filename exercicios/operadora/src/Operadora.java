@@ -1,6 +1,7 @@
+package exercicios.operadora.src;
 import java.util.Scanner;
 
-public class App{
+public class Operadora{
     public static double calculateTotal(int minutesUsed){
         double defaultPrice = 50.00;
         double rateValue = 2.00;
