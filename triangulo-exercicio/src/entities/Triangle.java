@@ -6,7 +6,7 @@ public class Triangle {
     public double sideC;
 
     public double area;
-    private double semiPerimeter;
+
 
     public Triangle(double sideA, double sideB, double sideC) {
         this.sideA = sideA;
@@ -15,17 +15,10 @@ public class Triangle {
     }
 
 
-    private void calculateSemiPerimeter() {
-
-        this.semiPerimeter = (this.sideA + this.sideB + this.sideC) / 2.0;
-
-
-    }
-
     public void calculateArea() {
-        this.calculateSemiPerimeter();
+        double semiPerimeter = (this.sideA + this.sideB + this.sideC) / 2.0;
 
-        this.area = Math.sqrt(this.semiPerimeter * (this.semiPerimeter - this.sideA) * (this.semiPerimeter - this.sideB) * (this.semiPerimeter - this.sideC));
+        this.area = Math.sqrt(semiPerimeter * (semiPerimeter - this.sideA) * (semiPerimeter - this.sideB) * (semiPerimeter - this.sideC));
 
 
     }
