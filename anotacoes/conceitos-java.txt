@@ -16,3 +16,11 @@ Object possui os seguintes métodos:
 - equals - compara se o objeto é igual a outro;
 - hashCode - retorna um código hash do objeto;
 - toString - converte o objeto para string.
+
+Membros estáticos
+- são membros que fazem sentido independentemente de objetos.
+Não precisam de objeto para sereme chamados. São chamados a partir do próprio nome da classe.
+- aplicações comuns: classes utilitárias (Math.sqrt(double)) e declarações de constantes.
+- uma classe que possui somente membros estáticos, pode ser uma classe estática também.
+Esta classe não poderá ser instanciada.
+- exemplo de atributo estático: public static final (final para dizer que é estático) double PI = 3.14;

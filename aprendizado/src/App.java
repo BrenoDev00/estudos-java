@@ -1,11 +1,12 @@
 package aprendizado.src;
 import java.text.DecimalFormat;
+import aprendizado.src.Calculator;
 
 public class App{
     public static void main(String[] args){
         // exercício de print
         System.out.println("Products:");
-
+        var calc = new Calculator();
         String computer = "Computer";
         double computerPrice = 2100.0;
 
@@ -35,5 +36,6 @@ public class App{
 
         System.out.println("US decimal point: " + usFormat);
         
+        System.out.println("PI value: " + calc.PI);
     }
 }
