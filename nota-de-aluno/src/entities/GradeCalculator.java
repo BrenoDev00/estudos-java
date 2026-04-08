@@ -7,30 +7,31 @@ import java.util.Scanner;
 public class GradeCalculator {
     private Student student;
     private Scanner sc = new Scanner(System.in);
-    private String studentStatus;
-    private int minimumPassingGrade = 60;
+    private final static int MINIMUM_PASSING_GRADE = 60;
 
     private void showStudentGradeResult(double totalGrade, double missingGrade) {
+        System.out.println("STUDENT NAME: " + this.student.getName());
         System.out.println("FINAL GRADE: " + totalGrade);
-        System.out.println(this.studentStatus);
+        System.out.println(this.student.getStatus());
 
-        if (totalGrade < this.minimumPassingGrade) {
+        if (totalGrade < MINIMUM_PASSING_GRADE) {
             System.out.println("MISSING " + missingGrade);
         }
     }
 
     private double calculateMissingGrade(double totalGrade) {
-        return this.minimumPassingGrade - totalGrade;
+        return MINIMUM_PASSING_GRADE - totalGrade;
     }
 
     private void calculateFinalGrade() {
-        double totalGrade = this.student.grade1 + this.student.grade2 + this.student.grade3;
+        double totalGrade = this.student.getGrade1() + this.student.getGrade2() + this.student.getGrade3();
         double missingGrade = 0;
-        if (totalGrade < this.minimumPassingGrade) {
-            this.studentStatus = "FAILED";
+
+        if (totalGrade < MINIMUM_PASSING_GRADE) {
+            this.student.setStatus("FAILED");
             missingGrade = this.calculateMissingGrade(totalGrade);
         } else {
-            this.studentStatus = "PASS";
+            this.student.setStatus("PASS");
         }
 
         this.showStudentGradeResult(totalGrade, missingGrade);
@@ -55,6 +56,4 @@ public class GradeCalculator {
 
         this.sc.close();
     }
-
-
 }
