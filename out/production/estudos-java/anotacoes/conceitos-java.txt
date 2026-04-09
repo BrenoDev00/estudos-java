@@ -9,3 +9,18 @@ JVM - A máquina virtual do Java é necessária para executar e desenvolver sist
 
 O Java usa o paradigma orientado a objetos - toda aplicação Java é feita com classes.
 Package - é um agrupamento lógico de classes relacionadas.
+
+Toda classe em Java é uma subclasse da classe Object.
+Object possui os seguintes métodos:
+- getClass - retorna o tipo do objeto;
+- equals - compara se o objeto é igual a outro;
+- hashCode - retorna um código hash do objeto;
+- toString - converte o objeto para string.
+
+Membros estáticos
+- são membros que fazem sentido independentemente de objetos.
+Não precisam de objeto para sereme chamados. São chamados a partir do próprio nome da classe.
+- aplicações comuns: classes utilitárias (Math.sqrt(double)) e declarações de constantes.
+- uma classe que possui somente membros estáticos, pode ser uma classe estática também.
+Esta classe não poderá ser instanciada.
+- exemplo de atributo estático: public static final (final para dizer que é estático) double PI = 3.14;
