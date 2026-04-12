@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class GradeCalculator {
     private Student student;
-    private Scanner sc = new Scanner(System.in);
+    private final static Scanner SC = new Scanner(System.in);
     private final static int MINIMUM_PASSING_GRADE = 60;
 
     private void showStudentGradeResult(double totalGrade, double missingGrade) {
@@ -39,21 +39,21 @@ public class GradeCalculator {
 
     public void getStudentGrades() {
         System.out.print("Informe o nome do estudante: ");
-        var studentName = this.sc.nextLine();
+        var studentName = SC.nextLine();
 
         System.out.print("Nota 1: ");
-        var grade1 = this.sc.nextDouble();
+        var grade1 = SC.nextDouble();
 
         System.out.print("Nota 2: ");
-        var grade2 = this.sc.nextDouble();
+        var grade2 = SC.nextDouble();
 
         System.out.print("Nota 3: ");
-        var grade3 = this.sc.nextDouble();
+        var grade3 = SC.nextDouble();
 
         this.student = new Student(studentName, grade1, grade2, grade3);
 
         this.calculateFinalGrade();
 
-        this.sc.close();
+        SC.close();
     }
 }
