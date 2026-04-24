@@ -5,10 +5,11 @@ import java.time.LocalDateTime;
 import java.time.Instant;
 import java.time.format.DateTimeFormatter;
 
-public class dataHoraLocal {
+public class DataHoraLocal {
     // data e hora local não leva em consideração fuso-horário
     public static void main(String[] args) {
         exemplos();
+        outrosMetodos();
     }
 
     public static void exemplos() {
@@ -31,5 +32,16 @@ public class dataHoraLocal {
         String dataFormatada = data4.format(formatadorDeData);
 
         System.out.println(dataFormatada);
+    }
+
+    public static void outrosMetodos() {
+        // obter ano
+        int year = LocalDate.now().getYear();
+
+        // obter dia do mês
+        int day = LocalDate.now().getDayOfMonth();
+
+        System.out.println(year);
+        System.out.println(day);
     }
 }
