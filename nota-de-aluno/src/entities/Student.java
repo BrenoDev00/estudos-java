@@ -30,11 +30,11 @@ public class Student {
         return this.grade3;
     }
 
-    public void setStatus(String status){
+    public void setStatus(String status) {
         this.status = status;
     }
 
-    public String getStatus(){
+    public String getStatus() {
         return this.status;
     }
 }

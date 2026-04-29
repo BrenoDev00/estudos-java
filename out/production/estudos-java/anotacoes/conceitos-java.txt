@@ -24,3 +24,17 @@ Não precisam de objeto para sereme chamados. São chamados a partir do próprio
 - uma classe que possui somente membros estáticos, pode ser uma classe estática também.
 Esta classe não poderá ser instanciada.
 - exemplo de atributo estático: public static final (final para dizer que é estático) double PI = 3.14;
+
+Sobrecarga
+- É um recurso que uma classe possui de oferecer mais de uma operação com o
+mesmo nome (mais de um construtor, por exemplo), porém com diferentes listas de parâmetros.
+
+Getters e Setters:
+- É boa prática utilizar acessadores e modificadores nas classes para manter o encapsulamento corretamente.
+Faz parte disso também manter atributos privados e acessá-los via getters e modificá-los via setters.
+
+Garbage collector
+- É um processo que automatiza o gerenciamenteo de memória de uma programa em execução.
+- O garbage collector monitora os objetos alocados dinamicamente pelo programa,
+desalocando aqueles que não estão mais sendo utilizados.
+- Variáveis locais são desalocadas imediatamente assim que seu escopo local sai de execução.
