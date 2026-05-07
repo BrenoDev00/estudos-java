@@ -1,4 +1,4 @@
-package aprendizado.src.dataHora;
+package aprendizado.src;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -6,7 +6,6 @@ import java.time.Instant;
 import java.time.format.DateTimeFormatter;
 
 public class DataHoraLocal {
-    // data e hora local não leva em consideração fuso-horário
     public static void main(String[] args) {
         exemplos();
         outrosMetodos();
