@@ -38,3 +38,14 @@ Garbage collector
 - O garbage collector monitora os objetos alocados dinamicamente pelo programa,
 desalocando aqueles que não estão mais sendo utilizados.
 - Variáveis locais são desalocadas imediatamente assim que seu escopo local sai de execução.
+
+Classes Wrapper
+- são classes que encapsulam tipos primitivos em objetos. Cada tipo primitivo tem uma classe correspondente.
+Exemplo: Integer, Double, Character, Boolean...
+- quando usar: quando precisa de objetos, coleções... exemplo ArrayList, HashMap só aceitam objeto
+ArrayList<Integer> lista = new ArrayList<>();
+lista.add(10);
+quando precisa representar ausência de valor (null).
+Integer numero = null;
+- quando evitar: em operações simples onde tipos primitivos são mais eficientes;
+em código de alto desempenho, porque wrappers consomem mais memória e processamento.
